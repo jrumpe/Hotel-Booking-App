@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?><!-- suppress ALL -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.guzman.app1">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".Font"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher_kisii"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_kisii_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- android:name="android.support.multidex.MultiDexApplication" -->
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PermissionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ExploreHotel"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guzman.app1.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guzman.app1.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guzman.app1.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Pdf"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guzman.app1.MainActivity" />
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".BookRoom"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guzman.app1.ExploreHotel" />
+        </activity>
+        <activity
+            android:name=".OrderFood"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guzman.app1.ExploreHotel" />
+        </activity>
+        <activity
+            android:name=".UserInfor"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guzman.app1.MainActivity" />
+        </activity>
+        <activity
+            android:name=".BookedRooms"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guzman.app1.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Orders"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guzman.app1.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Print_pdf"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guzman.app1.MainActivity" />
+        </activity>
+        <activity
+            android:name=".FoodList"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guzman.app1.ExploreHotel" />
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guzman.app1.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".SignIn"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guzman.app1.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".Reservation"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guzman.app1.MainActivity" />
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.guzman.app1.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".MainLogin"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AdminLogin"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guzman.app1.MainLogin" />
+        </activity>
+        <activity
+            android:name=".AdminHome"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.guzman.app1.AdminLogin" />
+        </activity>
+
+        <service
+            android:name=".ListenBookings"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

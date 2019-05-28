@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_rooms"
+        android:icon="@drawable/ic_hotel_black_24dp"
+        android:title="Rooms" />
+
+    <item
+        android:id="@+id/navigation_meals"
+        android:icon="@drawable/ic_local_dining_black_24dp"
+        android:title="Meals" />
+
+
+</menu>
+
+<!--<item-->
+<!--android:visible="false"-->
+<!--android:id="@+id/navigation_favorites"-->
+<!--android:icon="@drawable/ic_favorite_black_24dp"-->
+<!--android:title="Favorites" />-->

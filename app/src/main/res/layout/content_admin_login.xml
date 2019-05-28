@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/overlayBackground"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AdminLogin"
+    tools:showIn="@layout/activity_admin_login">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"
+        android:text="Sign in"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="26sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:text="jrumpe@gmail.com"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="18sp"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@android:color/black"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:text="123456"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="18sp"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_minCharacters="5"
+                app:met_primaryColor="@android:color/black"
+                app:met_singleLineEllipsis="true" />
+
+            <Button
+                android:id="@+id/btnLogIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/btn_signin_background"
+                android:text="Sign In"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/txt_forgot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Forgot Password?"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

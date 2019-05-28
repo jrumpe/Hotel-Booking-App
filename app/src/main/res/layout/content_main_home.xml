@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/flContent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/app_bar_main">
+
+    <com.mancj.materialsearchbar.MaterialSearchBar
+        android:visibility="gone"
+        android:layout_marginBottom="6dp"
+        android:layout_margin="8dp"
+        app:mt_speechMode="false"
+        app:mt_placeholder="search hotels"
+        app:mt_hint="Search Hotel"
+        android:id="@+id/searchBar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.mancj.materialsearchbar.MaterialSearchBar>
+    <AdapterViewFlipper
+        android:id="@+id/adapterViewFlipper"
+        android:background="@color/overlayBackground"
+        android:layout_below="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:autoStart="true"
+        android:flipInterval="2000"
+        android:layout_height="160dp">
+
+    </AdapterViewFlipper>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_below="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/swipeRefresh">
+
+        <android.support.v7.widget.RecyclerView
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_hotels"
+            tools:listitems=""/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

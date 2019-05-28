@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:elevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/imgBooking"
+            android:background="@drawable/luxury_room"
+            android:layout_width="120dp"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:background="@android:color/white"
+            android:layout_toRightOf="@+id/imgBooking"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/txtReservHotel"
+                android:textSize="22sp"
+                android:text="Hotel Dados"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/txtReservRoom"
+                android:textSize="18sp"
+                android:text="Luxury Room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:drawableLeft="@drawable/ic_attach_money_green_24dp"
+                android:id="@+id/txtReservPrice"
+                android:textSize="18sp"
+                android:textColor="#08c94c"
+                android:text="12000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:id="@+id/txtArrival"
+                    android:textSize="18sp"
+                    android:text="Arrival"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_below="@+id/txtArrival"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/txtDepart"
+                    android:textSize="18sp"
+                    android:text="Departure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_toRightOf="@+id/txtArrival"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/txtArrivalDate"
+                    android:textSize="18sp"
+                    android:text="Arrival"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/txtDepart"
+                    android:layout_below="@+id/txtArrival"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/txtDepartDate"
+                    android:textSize="18sp"
+                    android:text="Departure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

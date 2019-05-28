@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayout"
+    android:background="@mipmap/palazzo"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvKisii"
+            android:textSize="36sp"
+            android:text="K I S I I   T O W N "
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvCustomer"
+            android:textSize="22sp"
+            android:text="HOTELS"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+   </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtMotto"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:text="YOUR STAY OUR RESPONSIBILITY"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        android:layout_above="@+id/txtMotto"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button_signin"
+            android:background="@drawable/btn_signin_background"
+            android:textColor="@android:color/black"
+            android:text="SIGN IN"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnRegister"
+            android:background="@drawable/btn_register_background"
+            android:textColor="@android:color/black"
+            android:text="REGISTER"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>

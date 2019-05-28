@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/print"
+    android:layout_width="match_parent"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="2dp"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scroll_view-parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/print_pdf"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="end"
+                android:layout_marginTop="8dp"
+                android:id="@+id/llayout0"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtReceipt"
+                    android:text="Receipt No :"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txtReceiptNo"
+                    android:layout_marginLeft="6dp"
+                    android:text="HFDJ678"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/llayout0"
+                android:id="@+id/llayout1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:gravity="center"
+                    android:id="@+id/profile"
+                    android:background="@drawable/profile"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/tittle"
+                    android:text="Guzman Enterprises"
+                    android:textColor="@android:color/black"
+                    android:textSize="22sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <!--View must be caps V-->
+            <View
+                android:background="@android:color/black"
+                android:layout_below="@+id/llayout1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:id="@+id/llayout2"
+                android:layout_below="@+id/llayout1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:text="Email :"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txtGuestEmail"
+                    android:layout_marginLeft="6dp"
+                    android:text="jrumpe@gmail.com"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:id="@+id/llayout3"
+                android:layout_below="@+id/llayout2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtRoom"
+                    android:text="Room :"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txtGuestRoom"
+                    android:layout_marginLeft="6dp"
+                    android:text="Luxury Room"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:id="@+id/llayout4"
+                android:layout_below="@+id/llayout3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtAmount"
+                    android:text="Amount :"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+                    android:id="@+id/txtGuestAmount"
+                    android:layout_marginLeft="6dp"
+                    android:text="13000"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:id="@+id/llayout5"
+                android:layout_below="@+id/llayout4"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtArrival"
+                    android:text="Arrival :"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txtGuestArrival"
+                    android:layout_marginLeft="6dp"
+                    android:text="17/07/2018"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:id="@+id/llayout6"
+                android:layout_below="@+id/llayout5"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtDeparture0"
+                    android:text="Departure :"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txtGuestDeparture"
+                    android:layout_marginLeft="6dp"
+                    android:text="18/07/2018"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:id="@+id/llayout7"
+                android:layout_below="@+id/llayout6"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtApproved"
+                    android:text="Payment State :"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txtGuestPayment"
+                    android:layout_marginLeft="6dp"
+                    android:text="Approved"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+    <Button
+        android:id="@+id/btnPrintPdfAssap"
+        android:text="print"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_dark"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

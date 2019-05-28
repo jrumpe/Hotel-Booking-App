@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:elevation="10dp"
+    app:cardCornerRadius="5dp"
+    android:layout_marginBottom="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:id="@+id/layout_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imgCategory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/meatfood_small" />
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:background="@color/overlayBackground"
+                    android:id="@+id/txtName"
+                    android:textAlignment="center"
+                    android:textSize="22sp"
+                    android:textColor="@android:color/white"
+                    android:text="Steak Meat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:visibility="gone"
+                    android:alpha="0.6"
+                    android:background="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:background="@color/overlayBackground"
+                        android:id="@+id/txtLikes"
+                        android:padding="3dp"
+                        android:textColor="@android:color/white"
+                        android:text="45 Likes"
+                        android:textSize="19sp"
+                        android:drawableLeft="@drawable/ic_thumb_up_red_24dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:drawableLeft="@drawable/ic_attach_money_green_24dp"
+                        android:background="@color/overlayBackground"
+                        android:padding="1dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_gravity="end"
+                        android:textAlignment="viewEnd"
+                        android:id="@+id/txtPrice"
+                        android:textSize="19sp"
+                        android:textColor="#08c94c"
+                        android:text="1200"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+</android.support.v7.widget.CardView>

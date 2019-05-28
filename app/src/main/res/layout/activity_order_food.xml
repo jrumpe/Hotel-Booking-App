@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".OrderFood">
+
+    <ScrollView
+        android:visibility="gone"
+        android:id="@+id/scrollOrder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/layout_order_food_cards"/>
+    </ScrollView>
+
+    <include layout="@layout/layout_order_food_cards"/>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnCont"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/btnOrderFood"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:text="Continue" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
